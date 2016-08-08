@@ -25,7 +25,7 @@ int main() {
   }
 
 //0x0C whoami verify
-   if(read_register(file, 0x1e, 0x0D, &data))
+   if(read_register(file, 0x20, 0x0C, &data))
     exit(1);
    else
     printf("GET:Register[0x%02X]: 0x%02X\n" , 12 , data);
